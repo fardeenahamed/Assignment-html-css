@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: #fedc01;
+        display: table-cell;
+      }
+
+      .flex-container > div {
+        background-color: #9d9a9a;
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fedc01;
+      }
+
+      header {
+        background-color: #666;
+        padding: 1px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: #fedc01;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #fedc01;
+        height: 300px;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>WEBSERIES</h2>
+    </header>
+
+    <section>
+      <nav>
+        <form action="submit.html">
+          <label for="fname">Title:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="lname">Directors:</label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label for="fname">Stars:</label><br />
+          <input type="text" id="Stars" name="Stars" /><br />
+          <label for="fname">Streaming platform:</label><br />
+          <select>
+            <option></option>
+            <option>NETFLIX</option>
+            <option>HOTSTAR</option>
+            <option>AMAZON PRIME</option>
+            <option>ZEE5</option>
+          </select>
+
+          <br />
+
+          <br />
+          <input type="submit" value="ADD" />
+        </form>
+      </nav>
+
+      <article>
+        <div class="flex-container">
+          <div>
+            TITLE: FARZI<br />
+            DIRECTOR: RAJ & DK<br />
+            STARS: SHAHID KAPOOR , VIJAY SETHUPATHI<br />
+            STREAMING:
+            <a
+              href="https://www.primevideo.com/detail/0HDHQAUF5LPWOJRCO025LFJSJI/ref=atv_sr_fle_c_Tn74RA_1_1_1"
+              >AMAZON PRIME</a
+            >
+          </div>
+          <div>
+            TITLE: WEDNESDAY<br />
+            DIRECTOR: MILES MILLER<br />
+            STARS: JENNA ORTEGA , EMMA MYRES ,CHRISTINA <br />
+            STREAMING:
+            <a href="https://www.netflix.com/title/81231974">NETFLIX</a>
+          </div>
+          <div>
+            TITLE: DECOUPLED<br />
+            DIRECTOR: MANU JOSEPH<br />
+            STARS: MADHAVAN , SURVEEN CHAWLA <br />
+            STREAMING:
+            <a href="https://www.netflix.com/search?q=DECOUPLED&jbv=81181080"
+              >NETFLIX</a
+            >
+          </div>
+        </div>
+        <div class="flex-container">
+          <div>
+            TITLE: HOW I MET YOUR MOTHER<br />
+            DIRECTOR: CATER BAYS , CRAIG THOMAS<br />
+            STARS: JOSH, NEIL, JASON <br />
+            STREAMING:
+            <a href="https://www.hotstar.com/in/tv/how-i-met-your-mother/8323"
+              >HOTSTAR</a
+            >
+          </div>
+          <div>
+            TITLE: TAJ: DIVIDED BY BLOOD<br />
+            DIRECTOR: CHANDRA MOHAN<br />
+            STARS: ROIEL SHREE, KRISHNA, RAMYA NAIYAK <br />
+            STREAMING:
+            <a
+              href="https://www.zee5.com/web-series/details/taj-divided-by-blood/0-6-4z5311140"
+              >ZEE5</a
+            >
+          </div>
+          <div>
+            TITLE: VIKINGS<br />
+            DIRECTOR: MICHAEL HIRST<br />
+            STARS: TRAVIS, ALEXANDER ,ALEX HOGH<br />
+            STREAMING:
+            <a href="https://www.netflix.com/search?q=VIKINGS&jbv=70301870"
+              >NETFLIX</a
+            >
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
